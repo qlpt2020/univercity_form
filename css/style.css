@@ -607,4 +607,33 @@ input[type=radio] {
   cursor: pointer;
   opacity: 0.8;
 }
+
+@media screen and (max-width: 600px) {
+  #wrapper {
+    width: 100%;
+    min-width: 100%;
+  }
+  #wrapper .main_inner {
+    width: 100%;
+  }
+  #wrapper #header {
+    width: 100%;
+  }
+  #wrapper .main {
+    width: 100%;
+  }
+  #wrapper #midasi #flow {
+    width: 100%;
+  }
+  #wrapper #midasi #flow ul li {
+    width: calc(100% / 3);
+  }
+  .main_Pamphlet {
+    width: 100%;
+  }
+  #wrapper .form dd {
+    width: 100%;
+    height: auto;
+  }
+}
 /*# sourceMappingURL=style.css.map */
