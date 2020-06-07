@@ -112,15 +112,9 @@ img {
   left: 50%;
 }
 
-#wrapper.pc #midasi #flow ul li.on {
-  background-color: #FFF;
-  border-radius: 5px;
-}
-
 #wrapper.pc #midasi #flow ul li {
   position: relative;
   left: -50%;
-  display: inline;
   float: left;
   width: 172px;
   height: 43px;
@@ -129,8 +123,24 @@ img {
   font-weight: bold;
 }
 
+#wrapper.pc #midasi #flow ul li.on {
+  background-color: #FFF;
+  border-radius: 5px;
+}
+
 .cl {
   color: #0072ca;
+}
+
+#wrapper.pc #midasi #flow ul li {
+  position: relative;
+  left: -50%;
+  float: left;
+  width: 172px;
+  height: 43px;
+  text-align: center;
+  padding-top: 7px;
+  font-weight: bold;
 }
 
 #wrapper.pc #midasi #flow ul li.arrow {
@@ -143,23 +153,6 @@ img {
   padding: 0 7px;
   height: 50px;
   line-height: 50px;
-}
-
-#wrapper.pc #midasi #flow ul li {
-  display: inline;
-  font-weight: bold;
-}
-
-#wrapper.pc #midasi #flow ul li {
-  position: relative;
-  left: -50%;
-  display: inline;
-  float: left;
-  width: 172px;
-  height: 43px;
-  text-align: center;
-  padding-top: 7px;
-  font-weight: bold;
 }
 
 /*/midasi*/
@@ -275,7 +268,6 @@ table {
 
 #wrapper.pc .form dd {
   background-color: #FFFFFF;
-  display: inline;
   float: left;
   width: 600px;
   padding: 10px;
@@ -389,7 +381,6 @@ table {
 }
 
 #wrapper.pc .form dt {
-  display: inline;
   float: left;
   width: 260px;
   padding: 10px;
@@ -571,10 +562,6 @@ table {
   width: 100%;
 }
 
-/*
-input[type="checkbox"] {
-
-}*/
 input {
   color: #000 !important;
 }
@@ -601,7 +588,6 @@ input {
   border: solid 2px #E5E5E5;
   padding: 10px 25px;
   width: 886px;
-  /*800px;*/
   margin-top: 8px;
 }
 
@@ -611,8 +597,6 @@ input {
 
 .title {
   color: #00a968;
-  /*#00a968*/
-  /*#3cb371*/
   font-weight: bold;
   padding: 0 0 15px 0;
   text-shadow: 0.5px 0.5px 0.5px grey;
@@ -649,8 +633,6 @@ img {
 
 .check {
   background: #00a968;
-  /*#00a968*/
-  /*#FFF100*/
   margin: 15px 0;
   font-weight: bold;
   padding: 8px 15px;
@@ -660,7 +642,6 @@ img {
 
 .check label {
   color: white;
-  /*#3cb371*/
   font-size: 18px;
 }
 
@@ -707,8 +688,6 @@ img {
 
 .sub_Pamphlet .flex .document_content .Pamphlet_content .check {
   background: #00a968;
-  /*#00331f*/
-  /*#a80041*/
   margin: 15px 0;
   font-weight: bold;
   padding: 8px 15px;
@@ -716,17 +695,6 @@ img {
   border-radius: 8px;
 }
 
-/*
-input, #request-list select, #request-list textarea {
-  margin: 0;
-  padding: 0;
-  background: none;
-  border: none;
-  border-radius: 0;
-  outline: none;
-  -moz-appearance: none;
-}
-*/
 .sub_Pamphlet .flex .document_content .Pamphlet_content .check label {
   color: white;
   /*#3cb371*/
@@ -774,11 +742,6 @@ input[type="radio"] {
   margin-bottom: 20px;
 }
 
-/*
-input[type="button"] {
-text-align: center;
-display: block;
-}*/
 /*トップに戻るボタン*/
 .scroll-top {
   position: fixed;
