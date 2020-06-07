@@ -179,10 +179,6 @@ table {
   border-collapse: collapse;
 }
 
-#wrapper #item td {
-  border-bottom: 1px solid #CCCCCC;
-  vertical-align: middle;
-}
 #wrapper #item th {
   padding: 15px 10px;
   text-align: center;
@@ -192,12 +188,15 @@ table {
     max-width: 60px;
   }
 }
-#wrapper #item td.books_summary {
-  table-layout: fixed !important;
-  width: 660px;
-}
 #wrapper #item td {
   padding: 15px 10px;
+  border-bottom: 1px solid #CCCCCC;
+  vertical-align: middle;
+
+  &.books_summary {
+    table-layout: fixed !important;
+    width: 660px;
+  }
   p {
     text-align: center;
     &.tarm_end {

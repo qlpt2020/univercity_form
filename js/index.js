@@ -1,22 +1,20 @@
-scrollTop('js-button', 500);
-function scrollTop(elem,duration) {
-  let target = document.getElementById(elem);
-  target.addEventListener('click', function() {
-  let currentY = window.pageYOffset; 
-  let step = duration/currentY > 1 ? 10 : 100;
-  let timeStep = duration/currentY * step;
-  let intervalID = setInterval(scrollUp, timeStep);
-function scrollUp(){
-  currentY = window.pageYOffset;
-  if(currentY === 0) {
-    clearInterval(intervalID);
-  } else {
-    scrollBy( 0, -step );
-  }
-  }
-  });
-}
+// スムーススクロール
+$(function(){
+  // #で始まるリンクをクリックしたら実行されます
 
+  $('a[href^="#"]').click(function() {
+  
+    // スクロールの速度
+    var speed = 500; // ミリ秒で記述
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+
+    $('body,html').animate({scrollTop:position}, speed, 'swing');
+    return false;
+    
+  });
+});
 
 function nextField(i, n, m) {
   if (i.value.length >= m) {
